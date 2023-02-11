@@ -1,0 +1,1 @@
+This is for HW3. All codes are in week3.ipynb, and there is no other specific instructions on running the code.
