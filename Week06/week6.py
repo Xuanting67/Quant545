@@ -30,14 +30,14 @@ class Option:
             price = self.X * np.exp(-self.r*T) * norm.cdf(-d2) - self.S * np.exp((self.b-self.r)*T) * norm.cdf(-d1)
         return price
 
-S = 165
+S = 155
 r = 0.0425
 coupon = 0.0053
 current_date = datetime(2023, 3, 3)
 exp_date = datetime(2023, 3, 17)
 
-call_option = Option(S, 150, r, coupon, "Call")
-put_option = Option(S, 180, r, coupon, "Put")
+call_option = Option(S, 140, r, coupon, "Call")
+put_option = Option(S, 170, r, coupon, "Put")
 
 ttm = call_option.time_to_maturity(current_date, exp_date)
 print(f"Time to Maturity is {round(ttm, 4)}")
